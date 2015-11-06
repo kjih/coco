@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ADD8E6;
+	color: #303030;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.links {
+	text-align: center;
+}
+
+.pages {
+	text-align: center;
+	margin-top: 10px;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+.images a: link {
+	text-decoration: none;
+}
+
+#topbar {
+	background-color: #75D1FF;
+	width: 100%;
+	height: 40px;
+	color: #303030;
+}
+
+#topbar ul {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+#topbar li {
+	float: left;
+	list-style: none;
+	margin: 5px;
+	padding: 5px 15px 5px 5px;
+	border-right: 1px solid #ADD8E6;
+}
+
+#logodiv {
+	float: left;
+	width: 38px;
+	padding-left: 12px;
+}
+
+#topbar a:link {
+	text-decoration: none;
+}
+
+a:link {
+	color: #303030;
+}
+
+a:visited {
+	color: #303030;
+}
+
+.break {
+	clear: both;
+}
+
+.imageDiv {
+	position: relative;
+	float: left;
+	height: 250px;
+	width: 200px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 5px;
+	border: 1px solid #75D1FF;
+}
+
+.currentPage {
+	font-weight: bold;
+	color: #303030;
+}
