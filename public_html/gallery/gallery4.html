@@ -6,9 +6,18 @@
 
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=962, initial-scale=1" />
 
 	<link rel="stylesheet" type="text/css" href="gallery_styles.css" />
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+
+	<!-- Magnific Popup core JS file -->
+	<script src="magnific-popup/jquery.magnific-popup.js"></script>
 
 </head>
 
@@ -39,36 +48,36 @@
 
 	<div class="images">
 
-	<a style="display:block" href="../images/coco_kevin/coco21.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco21.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco22.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco22.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco23.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco23.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco24.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco24.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco25.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco25.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco26.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco26.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco27.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco27.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco28.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco28.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco29.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco29.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco30.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco30.jpg');"></div>
-	</a>
+		<a href="../images/coco_kevin/coco21.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco21.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco22.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco22.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco23.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco23.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco24.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco24.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco25.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco25.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco26.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco26.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco27.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco27.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco28.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco28.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco29.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco29.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco30.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco30.jpg');"></div>
+		</a>
 	
 	</div>
 	
@@ -95,6 +104,15 @@
 		<a href="../friends.html">Friends</a> &#8226;
 		<a href="gallery.html">Gallery</a>
 	</div>
+
+	<script type="text/javascript">
+
+		$('.images').magnificPopup({
+ 			delegate: 'a',
+			type: 'image'
+		});
+
+	</script>
 
 </body>
 </html>

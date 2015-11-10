@@ -6,9 +6,18 @@
 
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=962, initial-scale=1" />
 
 	<link rel="stylesheet" type="text/css" href="gallery_styles.css" />
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+
+	<!-- Magnific Popup core JS file -->
+	<script src="magnific-popup/jquery.magnific-popup.js"></script>
 
 </head>
 
@@ -35,37 +44,37 @@
 
 	</div>
 
+	<h2>Master Coconut's Photo Gallery</h2>
+
 	<div class="images">
 
-		<h2>Master Coconut's Photo Gallery</h2>
-
-	<a style="display:block" href="../images/coco_kevin/coco41.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco41.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco42.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco42.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco43.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco43.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco44.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco44.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco45.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco45.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco46.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco46.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco47.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco47.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco48.jpg">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco48.jpg');"></div>
-	</a>
-	<a style="display:block" href="../images/coco_kevin/coco49.png">
-	  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco49.png');"></div>
-	</a>
+		<a href="../images/coco_kevin/coco41.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco41.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco42.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco42.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco43.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco43.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco44.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco44.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco45.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco45.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco46.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco46.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco47.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco47.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco48.jpg">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco48.jpg');"></div>
+		</a>
+		<a href="../images/coco_kevin/coco49.png">
+		  <div class="imageDiv" style="background-image:url('../images/coco_kevin/coco49.png');"></div>
+		</a>
 
 	</div>
 
@@ -91,6 +100,15 @@
 		<a href="../friends.html">Friends</a> &#8226;
 		<a href="gallery.html">Gallery</a>
 	</div>
+
+	<script type="text/javascript">
+
+		$('.images').magnificPopup({
+ 			delegate: 'a',
+			type: 'image'
+		});
+
+	</script>
 
 </body>
 </html>

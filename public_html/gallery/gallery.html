@@ -6,9 +6,18 @@
 
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=962, initial-scale=1" />
 
 	<link rel="stylesheet" type="text/css" href="gallery_styles.css" />
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+
+	<!-- Magnific Popup core JS file -->
+	<script src="magnific-popup/jquery.magnific-popup.js"></script>
 
 </head>
 
@@ -39,31 +48,31 @@
 
 	<div class="images">
 
-		<a style="display:block" href="../images/handsome_coco.png">
+		<a href="../images/handsome_coco.png">
 			<div class="imageDiv" style="background-image:url('../images/handsome_coco.png');"></div>
 		</a>
-		<a style="display:block" href="../images/coco1.jpg">
+		<a href="../images/coco1.jpg">
 			<div class="imageDiv" style="background-image:url('../images/coco1.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/coco2.jpg">
+		<a href="../images/coco2.jpg">
 			<div class="imageDiv" style="background-image:url('../images/coco2.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/help1.jpg">
+		<a href="../images/help1.jpg">
 			<div class="imageDiv" style="background-image:url('../images/help1.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/wtf1.jpg">
+		<a href="../images/wtf1.jpg">
 			<div class="imageDiv" style="background-image:url('../images/wtf1.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/wtf2.jpg">
+		<a href="../images/wtf2.jpg">
 			<div class="imageDiv" style="background-image:url('../images/wtf2.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/wtf3.jpg">
+		<a href="../images/wtf3.jpg">
 			<div class="imageDiv" style="background-image:url('../images/wtf3.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/wtf4.jpg">
+		<a href="../images/wtf4.jpg">
 			<div class="imageDiv" style="background-image:url('../images/wtf4.jpg');"></div>
 		</a>
-		<a style="display:block" href="../images/wtf5.jpg">
+		<a href="../images/wtf5.jpg">
 			<div class="imageDiv" style="background-image:url('../images/wtf5.jpg');"></div>
 		</a>
 
@@ -91,6 +100,15 @@
 		<a href="../friends.html">Friends</a> &#8226;
 		<a href="gallery.html">Gallery</a>
 	</div>
+
+	<script type="text/javascript">
+
+		$('.images').magnificPopup({
+ 			delegate: 'a',
+			type: 'image'
+		});
+
+	</script>
 
 </body>
 </html>

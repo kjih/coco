@@ -19,27 +19,35 @@ function makeBox() {
 	boxTimer = 1000 + (boxTimer * 2000);   // min 1 sec
 
 	// choose color
+	/*
 	colorPicker = Math.random();
 	colorPicker = colorPicker * (colors.length + 1);
 	colorPicker = Math.floor(colorPicker);
 	// set div background color
 	document.getElementById("box").style.backgroundColor = colors[colorPicker];
+	*/
 
 	// choose shape
+	/*
 	if (Math.random() < 0.5) {
 		document.getElementById("box").style.borderRadius = "0px";
 	} else {
 		document.getElementById("box").style.borderRadius = "100px";
 	}
+	*/
 
 	// choose background-image
 	imagePicker = Math.random();
-	if (imagePicker < 0.25) {
-		document.getElementById("box").style.backgroundImage = "url('images/coco_logo.png')";
-	} else if (imagePicker > 0.75) {
-		document.getElementById("box").style.backgroundImage = "url('images/coco_kevin/coco35.jpg')";
+	if (imagePicker <= 0.2) {
+		document.getElementById("box").style.backgroundImage = "url('images/reactiongameImages/img01.jpg')";
+	} else if (imagePicker > 0.2 && imagePicker <= 0.4) {
+		document.getElementById("box").style.backgroundImage = "url('images/reactiongameImages/img02.jpg')";
+	} else if (imagePicker > 0.4 && imagePicker <= 0.6) {
+		document.getElementById("box").style.backgroundImage = "url('images/reactiongameImages/img03.jpg')";
+	} else if (imagePicker > 0.6 && imagePicker <= 0.8) {
+		document.getElementById("box").style.backgroundImage = "url('images/reactiongameImages/img04.jpg')";
 	} else {
-		document.getElementById("box").style.backgroundImage = "url('images/coco2.jpg')";
+		document.getElementById("box").style.backgroundImage = "url('images/reactiongameImages/img05.jpg')";
 	}
 
 	// choose position
