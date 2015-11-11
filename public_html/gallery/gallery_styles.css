@@ -47,7 +47,7 @@ a:hover {
 #logodiv {
 	float: left;
 	width: 38px;
-	padding-left: 12px;
+	padding-left: 8px;
 }
 
 #topbar a:link {
@@ -81,4 +81,8 @@ a:visited {
 .currentPage {
 	font-weight: bold;
 	color: #0C090A;
+}
+
+#container {
+	padding-left: 12px;
 }
