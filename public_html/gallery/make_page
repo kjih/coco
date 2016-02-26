@@ -1,0 +1,205 @@
+#!/bin/bash
+
+# make_page
+# Generate new gallery page.
+# Prompts for new page number.
+# Requires exactly 12 new images.
+
+
+echo -n "Enter new page number > "
+read pageNo
+
+beg="gallery"
+ext=".html"
+file=$beg$pageNo$ext
+
+pre="../images/"
+echo "Enter image folder path..."
+echo -n $pre
+read path
+
+fullpath=$pre$path"/"
+
+echo "Enter image names..."
+echo -n "img01 > "
+read img01
+echo -n "img02 > "
+read img02
+echo -n "img03 > "
+read img03
+echo -n "img04 > "
+read img04
+echo -n "img05 > "
+read img05
+echo -n "img06 > "
+read img06
+echo -n "img07 > "
+read img07
+echo -n "img08 > "
+read img08
+echo -n "img09 > "
+read img09
+echo -n "img10 > "
+read img10
+echo -n "img11 > "
+read img11
+echo -n "img12 > "
+read img12
+
+echo "Creating page $pageNo..."
+
+echo "<!doctype html>" >> $file
+echo "<html>" >> $file
+echo "<head>" >> $file
+echo "" >> $file
+echo "  <title>Photo Gallery</title>" >> $file
+echo "  <link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />" >> $file
+echo "" >> $file
+echo "  <meta charset='utf-8' />" >> $file
+echo "  <meta http-equiv='Content-type' content='text/html; charset=utf-8' />" >> $file
+echo "  <meta name='viewport' content='width=962, initial-scale=1' />" >> $file
+echo "" >> $file
+echo "  <link rel='stylesheet' type='text/css' href='gallery_styles.css' />" >> $file
+echo "" >> $file
+echo "  <!-- JQuery -->" >> $file
+echo "  <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>" >> $file
+echo "" >> $file
+echo "  <!-- Magnific Popup core CSS file -->" >> $file
+echo "  <link rel='stylesheet' href='magnific-popup/magnific-popup.css' />" >> $file
+echo "" >> $file
+echo "  <!-- Magnific Popup core JS file -->" >> $file
+echo "  <script src='magnific-popup/jquery.magnific-popup.js'></script>" >> $file
+echo "" >> $file
+echo "</head>" >> $file
+echo "" >> $file
+echo "<body>" >> $file
+echo "" >> $file
+echo "  <div id='topbar'>" >> $file
+echo "" >> $file
+echo "    <div id='logodiv'>" >> $file
+echo "" >> $file
+echo "      <a href='../index.html'>" >> $file
+echo "        <img width='40px' src='../images/coco_logo.png'>" >> $file
+echo "      </a>" >> $file
+echo "" >> $file
+echo "    </div>" >> $file
+echo "" >> $file
+echo "    <ul>" >> $file
+echo "" >> $file
+echo "      <li><a href='../index.html'>Home</li>" >> $file
+echo "      <li><a href='../servants.html'>Servants</a></li>" >> $file
+echo "      <li><a href='../friends.html'>Friends</a></li>" >> $file
+echo "      <li style='border-right:none'><a href='gallery.html'><strong>Gallery</strong></a></li>" >> $file
+echo "" >> $file
+echo "    </ul>" >> $file
+echo "" >> $file
+echo "  </div>" >> $file
+echo "" >> $file
+echo "  <div id='container'>" >> $file
+echo "" >> $file
+echo "    <h2>Master Coconut's Photo Gallery</h2>" >> $file
+echo "" >> $file
+echo "    <div class='images'>" >> $file
+echo "" >> $file
+echo "      <a href='../images/coco/$img01'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img01\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img02.jpg'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img02\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img03'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img03\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img04'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img04\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img05'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img05\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img06'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img06\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img07'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img07\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img08'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img08\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img09'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img09\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img10'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img10\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img11'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img11\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "      <a href='../images/coco/$img12'>" >> $file
+echo "        <div class='imageDiv' style='background-image:url(\"$fullpath$img12\");'></div>" >> $file
+echo "      </a>" >> $file
+echo "" >> $file
+echo "    </div>" >> $file
+echo "" >> $file
+echo "  </div>" >> $file
+echo "" >> $file
+echo "  <div class='break'></div>" >> $file
+echo "" >> $file
+echo "  <div class='pages'>" >> $file
+echo "" >> $file
+
+#echo "    <a href='gallery5.html'>Previous</a>" >> $file
+#echo "    <a href='gallery.html'>1</a>" >> $file
+#echo "    <a href='gallery2.html'>2</a>" >> $file
+#echo "    <a href='gallery3.html'>3</a>" >> $file
+#echo "    <a href='gallery4.html'>4</a>" >> $file
+#echo "    <a href='gallery5.html'>5</a>" >> $file
+#echo "    <span class='currentPage'>6</span>" >> $file
+
+# Gallery navigation helper variables
+count=1
+s0="<a href='gallery"
+s2=".html'>"
+s4="</a>"
+prev="Previous"
+pp=$((pageNo - 1))
+
+# Previous link
+if [ "$pageNo" -gt "1" ]; then
+  echo "    "$s0$pp$s2$prev$s4 >> $file
+fi
+
+# Page numbers
+while [ $count -lt $pageNo ]; do
+  echo "    "$s0$count$s2$count$s4 >> $file
+  count=$((count + 1))
+done
+
+# Current page
+cp="<span class='currentPage'>"
+cp2="</span>"
+echo "    "$cp$pageNo$cp2 >> $file
+
+
+echo "" >> $file
+echo "  </div>" >> $file
+echo "" >> $file
+echo "  <hr />" >> $file
+echo "" >> $file
+echo "  <div class='links'>" >> $file
+echo "    <a href='../index.html'>Home</a> &#8226;" >> $file
+echo "    <a href='../servants.html'>Servants</a> &#8226;" >> $file
+echo "    <a href='../friends.html'>Friends</a> &#8226;" >> $file
+echo "    <a href='gallery.html'>Gallery</a>" >> $file
+echo "  </div>" >> $file
+echo "" >> $file
+echo "  <script type='text/javascript'>" >> $file
+echo "" >> $file
+echo "    \$('.images').magnificPopup({" >> $file
+echo "      delegate: 'a'," >> $file
+echo "      type: 'image'" >> $file
+echo "    });" >> $file
+echo "" >> $file
+echo "  </script>" >> $file
+echo "" >> $file
+echo "</body>" >> $file
+echo "</html>" >> $file

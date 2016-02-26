@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Photo Gallery</title>
+	<link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
+
+	<meta charset='utf-8' />
+	<meta http-equiv='Content-type' content='text/html; charset=utf-8' />
+	<meta name='viewport' content='width=962, initial-scale=1' />
+
+	<link rel='stylesheet' type='text/css' href='gallery_styles.css' />
+
+	<!-- JQuery -->
+	<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel='stylesheet' href='magnific-popup/magnific-popup.css' />
+
+	<!-- Magnific Popup core JS file -->
+	<script src='magnific-popup/jquery.magnific-popup.js'></script>
+
+</head>
+
+<body>
+
+	<div id='topbar'>
+
+		<div id='logodiv'>
+
+			<a href='../index.html'>
+				<img width='40px' src='../images/coco_logo.png'>
+			</a>
+
+		</div>
+
+		<ul>
+
+			<li><a href='../index.html'>Home</li>
+			<li><a href='../servants.html'>Servants</a></li>
+			<li><a href='../friends.html'>Friends</a></li>
+			<li style='border-right:none'><a href='gallery.html'><strong>Gallery</strong></a></li>
+
+		</ul>
+
+	</div>
+
+	<div id='container'>
+
+		<h2>Master Coconut's Photo Gallery</h2>
+
+		<div class='images'>
+
+			<a href='../images/coco_kevin/coco41.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco41.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco42.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco42.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco43.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco43.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco44.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco44.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco45.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco45.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco46.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco46.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco47.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco47.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco48.jpg'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco48.jpg');'></div>
+			</a>
+			<a href='../images/coco_kevin/coco49.png'>
+			  <div class='imageDiv' style='background-image:url('../images/coco_kevin/coco49.png');'></div>
+			</a>
+
+		</div>
+
+	</div>
+
+	<div class='break'></div>
+
+	<div class='pages'>
+
+		<a href='gallery5.html'>Previous</a>
+		<a href='gallery.html'>1</a>
+		<a href='gallery2.html'>2</a>
+		<a href='gallery3.html'>3</a>
+		<a href='gallery4.html'>4</a>
+		<a href='gallery5.html'>5</a>
+		<span class='currentPage'>6</span>
+
+	</div>
+
+	<hr />
+
+	<div class='links'>
+		<a href='../index.html'>Home</a> &#8226;
+		<a href='../servants.html'>Servants</a> &#8226;
+		<a href='../friends.html'>Friends</a> &#8226;
+		<a href='gallery.html'>Gallery</a>
+	</div>
+
+	<script type='text/javascript'>
+
+		\$('.images').magnificPopup({
+ 			delegate: 'a',
+			type: 'image'
+		});
+
+	</script>
+
+</body>
+</html>

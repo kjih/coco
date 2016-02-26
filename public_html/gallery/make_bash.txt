@@ -1,0 +1,17 @@
+chmod 755 'filename'
+
+:%s/^/echo "/
+--or--
+:%norm Iecho "
+
+:%norm A"
+
+%       = for every line
+norm    = type the following commands
+A*      = append '*' to the end of current line
+
+$	:end of line
+^	:first non-whitespace character in line
+0	:beginning of line
+A	:insert at end of line
+I	:insert at beginning of line
