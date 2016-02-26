@@ -12,7 +12,6 @@
 
   <div>
     <?php
-      echo "Hi";
 
       $emailTo = "kjih1994@gmail.com";
       $subject = "Hello";
