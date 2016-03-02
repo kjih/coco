@@ -4,3 +4,14 @@ This repository is a compliation of projects created while learning HTML, CSS, J
 
 Index of projects:
 http://bit.ly/1T7AnL2
+
+
+### Reaction Game
+
+### CodePlayer
+
+### Landing Page
+
+### Weather Scraper
+
+### Secret Diary
