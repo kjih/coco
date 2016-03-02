@@ -7,7 +7,7 @@ http://bit.ly/1T7AnL2
 
 
 ### Reaction Game
-Simple reaction game.
+Simple reaction game
 
 Focus: JavaScript
 
