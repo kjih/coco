@@ -1,4 +1,17 @@
-<? include("login.php"); ?>
+<?php
+
+  session_start();
+
+  include("connection.php");
+
+  $query = "SELECT diary FROM users WHERE id = '" . $_SESSION['id'] . "' LIMIT 1";
+
+  $result = mysqli_query($con, $query);
+  $row = mysqli_fetch_array($result);
+
+  $diary = $row['diary'];
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,8 +94,8 @@
         width: 250px;
       }
 
-      p {
-        font-size: 1.2em;
+      textarea {
+        margin-top: 10px;
       }
 
     </style>
@@ -91,73 +104,23 @@
   <body data-spy="scroll" data-target=".navbar-collapse">
     <div class="navbar navbar-inverse navbar-fixed-top" id="navBar">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header pull-left">
           <a href="" class="navbar-brand">Secret Diary</a>
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" />
-
-          <span class="sr-only">Toggle navigator</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
         </div>
 
-        <div class="collapse navbar-collapse">
-          <!--
+        <div class="pull-right">
           <ul class="nav navbar-nav">
-            <li><a href="#topContainer">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#footer">Visit Page</a></li>
+            <li><a href="index.php?logout=1">Log out</a></li>
           </ul>
-          -->
+        </div>
 
-          <form class="navbar-form navbar-right" method="post">
-            <div class="form-group">
-              <input type="email" name="loginemail" id="loginemail" placeholder="Email" class="form-control" value="<?php echo addslashes($_POST['loginemail']); ?>" />
-            </div>
-
-            <div class="form-group">
-              <input type="password" name="loginpassword" placeholder="Password" class="form-control" />
-            </div>
-
-            <input type="submit" class="btn" name="loginsubmit" value="Log in" />
-          </form>
-      </div>
     </div>
   </div>
 
   <div class="container contentContainer" id="topContainer">
     <div class="row marginBottom">
       <div class="col-md-6 col-md-offset-3" id="topRow">
-        <h1 class="divMarginTop">Secret Diary</h1>
-
-        <p>Your own private diary, with you wherever you go</p>
-
-        <?php
-          if ($error) {
-            echo '<div class="alert alert-danger">' . addslashes($error) . '</div>';
-          }
-
-          if ($message) {
-            echo '<div class="alert alert-success">' . addslashes($message) . '</div>';
-          }
-        ?>
-
-        <p class="bold">Interested? Sign up below!</p>
-
-        <form class="marginTop" method="post">
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your email" value="<?php echo addslashes($_POST['email']); ?>" />
-          </div>
-
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" placeholder="Password" name="password" />
-          </div>
-
-          <input type="submit" class="btn btn-success bnt-lg" name="submit" value="Sign up!" />
-        </form>
+        <textarea class="form-control"><?php echo $diary; ?></textarea>
       </div>
     </div>
   </div>
@@ -169,6 +132,11 @@
 
     <script>
       $(".contentContainer").css("min-height", $(window).height());
+      $("textarea").css("height", $(window).height() - 100);
+
+      $("textarea").keyup(function() {
+        $.post("updatediary.php", {diary:$("textarea").val()});
+      });
     </script>
   </body>
 </html>
