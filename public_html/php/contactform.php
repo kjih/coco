@@ -106,7 +106,7 @@
           <div class="form-group">
 
             <label for="name">Name:</label>
-            <input type="text" name="name" class="form-control" placeholder="Name" value = "<?php echo $_POST['name']; ?>" />
+            <input type="text" name="name" class="form-control" placeholder="Name" value="<?php echo $_POST['name']; ?>" />
 
           </div>
 

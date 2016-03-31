@@ -1,9 +1,10 @@
 # live
 
 This repository is a compliation of projects created while learning HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MySQl, etc.
+The files in this repository are outdated, have been re-organized in separate repositories, and re-hosted.
 
 Index of projects:
-http://bit.ly/1T7AnL2
+http://kjih.me
 
 
 ### Reaction Game
